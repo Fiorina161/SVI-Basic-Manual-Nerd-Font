@@ -11,15 +11,6 @@ A patched version of **SV Basic Manual**, a fixed-width font designed by [Johan 
 - **Patched into a Nerd Font.** Ran the official [`ryanoasis/nerd-fonts`](https://github.com/ryanoasis/nerd-fonts) `font-patcher` (v3.5.1) in `--complete --mono` mode, adding ~11,000 icon glyphs: Powerline, Powerline Extra, Font Awesome (+ Extension + Brands), Devicons, Material Design Icons, Octicons, Codicons, Weather Icons, Pomicons, Font Logos, IEC Power Symbols, and Braille — all sized to fit the font's fixed-width cell so terminal alignment isn't broken.
 - **Packaged as a single file.** Regular and Bold are bundled together as one TrueType Collection (`.ttc`), sharing common tables, the same way many system font bundles work.
 
-## Files
-
-| File | Description |
-|---|---|
-| `SVBasicManualNerdFontMono.ttc` | Final font: ç/Ç fix + monospace flags + full Nerd Font icon set. Regular + Bold in one file. |
-| `SVBasicManual.ttc` | ç/Ç fix + monospace flags only, no icons. Regular + Bold in one file. |
-| `SVBasicManual.ttf`, `SVBasicManual-Bold.ttf` | Original, unmodified fonts. |
-| `SVBasicManual.woff`, `SVBasicManual-Bold.woff` | Original, unmodified web fonts. |
-
 ## Installation
 
 **macOS**
