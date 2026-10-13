@@ -7,6 +7,7 @@ A patched version of **SV Basic Manual**, a fixed-width font designed by [Johan 
 ## What's changed from the original
 
 - **Added `ç` / `Ç` glyphs.** The original font had `c`, `C`, and `,` but no cedilla and no precomposed ç/Ç. These were synthesized by merging the `c`/`C` outlines with a scaled-down, repositioned copy of the `comma` outline, then mapped to U+00E7 and U+00C7 in the cmap.
+- **Slashed zero.** `0` was identical to `O` (same outline, same bounds); added a diagonal slash to the zero in both weights, trimmed to the glyph's outer shape and merged into a single clean outline.
 - **Declared as monospace.** The font was already visually fixed-width (160 of 163 glyphs shared one advance width), but didn't say so in its metadata. Set `post.isFixedPitch` and the PANOSE `bProportion` field to monospace, and set `OS/2.xAvgCharWidth` accordingly.
 - **Patched into a Nerd Font.** Ran the official [`ryanoasis/nerd-fonts`](https://github.com/ryanoasis/nerd-fonts) `font-patcher` (v3.5.1) in `--complete --mono` mode, adding ~11,000 icon glyphs: Powerline, Powerline Extra, Font Awesome (+ Extension + Brands), Devicons, Material Design Icons, Octicons, Codicons, Weather Icons, Pomicons, Font Logos, IEC Power Symbols, and Braille — all sized to fit the font's fixed-width cell so terminal alignment isn't broken.
 - **Packaged as a single file.** Regular and Bold are bundled together as one TrueType Collection (`.ttc`), sharing common tables, the same way many system font bundles work.
